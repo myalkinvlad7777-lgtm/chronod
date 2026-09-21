@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "chronod",
+  "version": "${version}",
+  "name": "chronod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/chronod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "chrono.chronod.client.ChronodDataGenerator"
+    ],
+    "client": [
+      "chrono.chronod.client.ChronodClient"
+    ],
+    "main": [
+      "chrono.chronod.Chronod"
+    ]
+  },
+  "mixins": [
+    "chronod.mixins.json",
+    {
+      "config": "chronod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

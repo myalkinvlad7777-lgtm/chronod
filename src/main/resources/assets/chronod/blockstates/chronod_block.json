@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "chronod:block/chronod_block"}
+  }
+}

@@ -1,0 +1,2 @@
+/give @s chronod:chronod_block
+/give @s minecraft:structure_block
