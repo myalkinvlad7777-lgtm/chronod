@@ -20,9 +20,6 @@ public class Chronod implements ModInitializer {
 
     public static final Block CHRONO_BLOCK = new Block(AbstractBlock.Settings.create().strength(1,5f));
 
-    public static final RegistryKey<PlacedFeature> CHRONO_SAND_HEAP_PLACED_KEY =
-            RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(MOD_ID, "chrono_sand_heap_placed"));
-
     @Override
     public void onInitialize() {
         Identifier blockId = Identifier.of(MOD_ID, "chronod_block");
@@ -30,11 +27,6 @@ public class Chronod implements ModInitializer {
         Registry.register(Registries.BLOCK, blockId, CHRONO_BLOCK);
         Registry.register(Registries.ITEM, blockId, new BlockItem(CHRONO_BLOCK, new Item.Settings()));
 
-        BiomeModifications.addFeature(
-                BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.SURFACE_STRUCTURES,
-                CHRONO_SAND_HEAP_PLACED_KEY
-        );
     }
     //d
 }

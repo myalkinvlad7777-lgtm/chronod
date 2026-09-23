@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:structure_template",
-  "config": {
-    "location": "chronod:heapsand_1",
-    "processors": "minecraft:empty",
-    "projection": "rigid"
-  }
-}
