@@ -26,7 +26,6 @@ public class Chronod implements ModInitializer {
 
         Registry.register(Registries.BLOCK, blockId, CHRONO_BLOCK);
         Registry.register(Registries.ITEM, blockId, new BlockItem(CHRONO_BLOCK, new Item.Settings()));
-
     }
     //d
 }
