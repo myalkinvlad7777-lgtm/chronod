@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " S ",
+    "SPS",
+    " S "
+  ],
+  "key": {
+    "S": { "item": "minecraft:sand" },
+    "P": { "item": "minecraft:ender_pearl" }
+  },
+  "result": {
+    "id": "chronod:chronod_block",
+    "count": 1
+  }
+}
